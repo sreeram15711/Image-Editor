@@ -1,0 +1,245 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Poppins', sans-serif;*/
+}
+.goback{
+/*  
+  border-radius:5px;
+  box-shadow: 0px 10px 20px rgb(95, 87, 87);
+  height:30px;
+  margin-right: 0px;
+  padding:5px;
+  margin-top: 30px;
+  margin-left:25px;
+  background-color: rgb(218, 129, 203);
+
+  */
+  border : 1px solid black; 
+  padding: 20px;
+  text-decoration: none;
+  color : red;
+  background-color: black;
+  margin-left: 10px;
+  border-radius: 5px;
+  
+}
+.goback:hover{
+  box-shadow: 0px 10px 10px rgb(95, 87, 87);
+}
+
+body{
+    /* display :flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; */
+    /*background-image: url('k3.jpg');*/
+    font: 1em/1.618 Inter, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  padding: 30px;
+  
+  background: url("https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-3840x2160-1432.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  /* width:850px;
+  padding :40px 40px 40px;
+  border-radius:15px;
+  box-shadow: 0px 10px 20px rgb(95, 87, 87);
+  margin-left: 150px;
+  margin-top: 50px;
+  background-color: rgb(206, 224, 196); */
+
+
+
+
+  max-width: 850px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 850px;
+  height: 600px;
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+.container:hover{
+  box-shadow: 0px 10px 10px rgb(51, 42, 42);
+}
+
+.editor-panel{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:15px 20px;
+  margin-right: 5px;
+  /* background-image: url('nature.jpg'); */
+  background-color: rgb(4, 28, 49);
+}
+
+.container h2{
+          font-size:25px;
+          font-weight: 500;
+          font-family:cursive;
+}
+
+.container.disable :where(.editor-panel, .reset-filter, .save-img){
+  opacity:0.5;
+  pointer-events: none;
+}
+
+
+.container .wrapper{
+  display:flex;
+  margin:20px 0;
+}
+.container .controls{
+  display: flex;
+}
+.editor-panel .title{
+  display:block;
+  font-size: 20px;
+  margin-bottom:10px;
+  color: white;
+}
+
+.editor-panel .options, .controls{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+ .editor-panel button{
+        border: 1px solid black;
+
+ }
+
+.editor-panel .filter button{
+  height: 40px;
+  font-size:15px;
+  color: black;
+ /* width:100px;*/
+  margin:5px;
+  /* background-color: rgb(20, 36, 50); */
+  border-radius: 5px;
+}
+.editor-panel  button:hover{
+  box-shadow: 0px 5px 8px rgb(51, 42, 42);
+  background: #f5f5f5;
+}
+
+.filter button.active{
+    color:#fff;
+    background: blue;
+    background-color: #5372F0;
+}
+
+.filter .slider .filter-info{
+  display: flex;
+  justify-content:space-around;
+  color: rgb(219, 72, 19);
+  font-weight: 800;
+}
+
+.filter .slider input{
+  width: 100%;
+ 
+  height:5px;
+}
+.filter .slider input:hover{
+  box-shadow: 0px 5px 20px rgb(255, 251, 0);
+}
+
+.editor-panel .filter button{
+  width: calc(100% / 2 - 2px);
+}
+
+.editor-panel .rotate button{
+  width: calc(100% / 2 - 3px);
+  height:30px;
+  margin-bottom: 5px;
+}
+
+
+.editor-panel .slider{
+  margin-top: 10px;
+}
+
+
+
+.rotatebutton:nth-child(3),
+.rotate button:nth-child(4){
+  font-size:18px;
+}
+
+
+.wrapper .preview-img{
+  margin-left:18px;
+}
+
+.preview-img img{
+    max-width:490px;
+    max-height: 335px;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+
+    
+}
+
+
+.controls button{
+  font-size:15px;
+  padding:15px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.controls button:hover{
+  box-shadow: 0px 5px 8px rgb(51, 42, 42);
+}
+
+.controls .reset-filter{
+  color:rgb(255, 255, 255);
+  border:1px solid rebeccapurple;
+  background-color: rgb(98, 126, 126);
+}
+.controls .reset-filter:hover{
+  background-color: rgb(56, 90, 90);
+}
+
+.controls .choose-img{
+  background-color: rgb(23, 195, 230);
+}
+
+.controls .choose-img:hover{
+  background-color: rgb(18, 241, 122);
+}
+
+.controls .save-img{
+   background-color: rgb(185, 29, 144);
+}
+
+.controls .save-img:hover{
+  background-color: rgb(34, 107, 27);
+}
